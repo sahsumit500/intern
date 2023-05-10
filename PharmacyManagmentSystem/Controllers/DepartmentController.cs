@@ -41,24 +41,7 @@ namespace PharmacyManagmentSystem.Controllers
         {
             return View();
         }
-
-        // POST: /Department/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="departmentId,name,description,deleted")] department department)
-        {
-            if (ModelState.IsValid)
-            {
-                pdal.AddNewDeprtment(department);
-                return RedirectToAction("Index");
-            }
-
-            return View(department);
-        }
-
-        // GET: /Department/Edit/5
+        /Department/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
