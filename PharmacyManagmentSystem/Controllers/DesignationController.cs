@@ -12,7 +12,7 @@ namespace PharmacyManagmentSystem.Controllers
 {
     public class DesignationController : Controller
     {
-        private pharmacyEntities db = new pharmacyEntities();
+       
 
         // GET: /Designation/
         public ActionResult Index()
